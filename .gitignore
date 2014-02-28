@@ -1,6 +1,10 @@
 *.class
-
 # Package Files #
-*.jar
 *.war
 *.ear
+.settings/
+/.classpath
+/.project
+/bin
+.DS_Store
+Copy of userLibrary.dic
