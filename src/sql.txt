@@ -1,0 +1,16 @@
+#创建数据库 mysql
+#create database makemoney;
+
+#use makemoney;
+
+#set names gbk;
+
+
+#创建数据库 Sqlserver
+create database makemoney;
+
+use makemoney;
+
+
+
+

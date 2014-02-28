@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<!-- 指定用spring中的对象工厂替换掉struct2中的对象工厂由spring来管理struct2中的action的创建 如果只引用了
+  struts2-spring-plugin-2.1.8.jar插件可以不需写，如果引用多个三方插件最好写上(由spring来管理Action实例)
+  -->
+   <constant name="struts.objectFactory" value="spring" />
+   <!-- 默认的视图主题 -->
+    <constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.action.extension" value="do"/>
+   	<include file="config/structs/*"></include>
+   	
+</struts>
