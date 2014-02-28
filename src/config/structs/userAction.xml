@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	 <package name="user" namespace="/user" extends="struts-default"> 	
+ 		<!--没有spring管理action bean：class="com.liyong.myaction,有spring来管理action bean ：class="action bean的名称 从spring中去获取这个action bean""  -->
+		<!-- method="{1} 指定要执行的方法和通配符一起使用， 默认会执行execute()方法-->
+		
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="result">/index.jsp</result>	
+			<result name="login">/index.jsp</result>		
+			<result name="loginout">/index.jsp</result>
+			<result name="setpersoninfor">/set-personInfor.jsp</result>
+			<result name="updatepwd">/set-pwd.jsp</result>
+		</action>
+   	 </package>
+ 	   
+</struts>

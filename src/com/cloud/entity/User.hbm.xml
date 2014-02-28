@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class table="p_user" name="com.cloud.bean.User">
+    <id name="id">
+      <generator class="increment"/>
+    </id>
+    <property name="user_name" column="user_name" length="25"/>
+    
+    <property name="user_pass" column="user_pass" type="string" length="50"/>   
+   
+    <property name="age" column="age" type="integer"/>
+   
+  </class>
+</hibernate-mapping>
